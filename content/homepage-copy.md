@@ -12,31 +12,71 @@ Building fast? Your people systems need to keep up. We help startups create smar
 
 ---
 
-## What I Do
+## What We Do
 
-### Learning & Development Design
-Custom onboarding and training that actually works for your team.
+### 1. L&D Strategy & Capability Design
+Align learning to business performance.
 
-- Build bespoke onboarding journeys for new hires
-- Create learning roadmaps aligned to your company goals
-- Develop training for customer service, operations, and leadership
-- Write facilitator guides and learner workbooks
+We work with organisations to design clear, commercially aligned learning strategies that build the capability required for growth.
 
-### Process & Tools
-Smart systems that scale with you, not against you.
+- Learning & Development strategy design
+- Skills and capability frameworks
+- Learning needs analysis
+- Role-based development pathways
+- Audit and optimisation of existing L&D activity
 
-- Create SOPs and scalable documentation in Notion, Confluence, or Google Docs
-- Set up simple training hubs (Notion, LMS, or hybrid)
-- Audit current L&D processes and recommend improvements
-- Design workflows that work for distributed teams
+**Outcome:** A clear, scalable approach to developing your people — aligned directly to business performance.
 
-### Culture & Capability
-Help your managers become better people leaders.
+### 2. Leadership & Management Development
+Build leaders who can deliver performance, not just manage people.
 
-- Coach managers to support performance and growth conversations
-- Build feedback frameworks that drive real improvement
-- Create career development paths that retain top talent
-- Design culture playbooks for consistent team experiences
+Growth places pressure on managers. Without the right capability, performance becomes inconsistent. We design and deliver leadership development programmes that build confident, capable managers.
+
+- First-time manager development programmes
+- Leadership capability frameworks
+- Performance management and feedback training
+- Coaching skills for managers
+- Difficult conversations and accountability
+
+**Outcome:** Stronger leadership, improved team performance, and more consistent execution across your organisation.
+
+### 3. Bespoke Learning & Development Programmes
+Design learning that drives real behavioural change.
+
+We create tailored learning programmes that go beyond one-off training — embedding capability into day-to-day work.
+
+- Structured onboarding programmes
+- Blended learning journeys (workshops + tools + reinforcement)
+- Internal training resources and toolkits
+- Facilitator guides and learning materials
+- Scalable learning systems
+
+**Outcome:** Faster onboarding, improved productivity, and consistent learning experiences across your teams.
+
+### 4. Performance & Culture Development
+Create a culture where performance and development go hand in hand.
+
+As organisations grow, inconsistency in feedback, expectations and development creates risk. We design the frameworks and systems that create clarity, accountability and high performance.
+
+- Performance management frameworks
+- Feedback and development systems
+- Career pathways and progression frameworks
+- Manager enablement tools
+- Culture and capability playbooks
+
+**Outcome:** Clear expectations, stronger engagement, and a culture that supports sustainable growth.
+
+### 5. Strategic L&D Partnership
+Ongoing support to embed capability at scale.
+
+For organisations that need consistent support, we act as a strategic L&D partner — supporting both design and implementation.
+
+- Ongoing advisory and strategy support
+- Programme design and oversight
+- Leadership development support
+- Continuous improvement of learning systems
+
+**Outcome:** A fully supported, scalable learning and development function without the need for a full internal team.
 
 ---
 

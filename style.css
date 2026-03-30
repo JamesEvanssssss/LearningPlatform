@@ -335,6 +335,14 @@ p {
     transition-delay: 0.8s;
 }
 
+.service-card:nth-child(4) {
+    transition-delay: 1s;
+}
+
+.service-card:nth-child(5) {
+    transition-delay: 1.2s;
+}
+
 .services.animated .service-card {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -388,6 +396,22 @@ p {
     color: #0f0f0f;
     font-weight: 600;
     font-size: 1rem;
+}
+
+.service-description {
+    color: #6b6b6b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px !important;
+}
+
+.service-outcome {
+    color: #4a4a4a;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #f5f5f5;
 }
 
 /* Pain Points Section */
