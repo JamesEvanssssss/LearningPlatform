@@ -210,21 +210,45 @@ function initServicesAnimation() {
 
 function initDiagnostic() {
     const checkboxes = document.querySelectorAll('.diagnostic-checkbox');
-    const resultDiv = document.getElementById('diagnostic-result');
+    const modal = document.getElementById('diagnostic-modal');
+    const modalClose = document.getElementById('modal-close');
+    const modalBackdrop = document.querySelector('.modal-backdrop');
+    let modalShown = false;
     
     function updateResult() {
-        const uncheckedCount = Array.from(checkboxes).filter(cb => !cb.checked).length;
+        const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
         
-        if (uncheckedCount >= 3) {
-            resultDiv.classList.add('show');
-        } else {
-            resultDiv.classList.remove('show');
+        // Show modal after 2+ clicks
+        if (checkedCount >= 2 && !modalShown) {
+            showModal();
+            modalShown = true;
         }
+    }
+    
+    function showModal() {
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeModal() {
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+        // Uncheck all boxes and reset
+        checkboxes.forEach(cb => cb.checked = false);
+        modalShown = false;
     }
     
     checkboxes.forEach(checkbox => {
         checkbox.addEventListener('change', updateResult);
     });
+    
+    if (modalClose) {
+        modalClose.addEventListener('click', closeModal);
+    }
+    
+    if (modalBackdrop) {
+        modalBackdrop.addEventListener('click', closeModal);
+    }
 }
 
 // Smooth scroll for CTA buttons
