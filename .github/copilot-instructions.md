@@ -1,8 +1,8 @@
 <!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 
-# L&D Consultant Website Project
+# Evans Learning & Performance Consulting
 
-This project contains website copy and content for a freelance Learning & Development consultant targeting startups and small businesses.
+This project contains website copy and content for Evans Learning & Performance Consulting, a freelance Learning & Development consulting firm targeting startups and small businesses.
 
 ## Brand Voice Guidelines
 - Clear, calm, and self-assured

@@ -1,6 +1,6 @@
-# L&D Consultant Website Project
+# Evans Learning & Performance Consulting
 
-A content project for a freelance Learning & Development consultant targeting startups and small businesses. This repository contains homepage copy, brand voice guidelines, and supporting documentation.
+Website and content for Evans Learning & Performance Consulting, providing practical L&D systems for startups and small businesses. This repository contains homepage copy, brand voice guidelines, and supporting documentation.
 
 ## Project Structure
 
