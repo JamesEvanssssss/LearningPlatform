@@ -4,7 +4,7 @@
 
 ### H1: Get your team onboarding and training right before you scale
 
-Building fast? Your people systems need to keep up. I help startups create smart onboarding, clear training paths, and scalable documentation—so you can grow without the growing pains.
+Building fast? Your people systems need to keep up. We help startups create smart onboarding, clear training paths, and scalable documentation—so you can grow without the growing pains.
 
 **CTA Button:** Book a Free Call
 
@@ -71,13 +71,13 @@ Full L&D foundations + internal enablement
 
 ---
 
-## Why Me
+## Why Us
 
-I'm not a corporate trainer with generic frameworks. I'm an operator who's built these systems from scratch at fast-growing companies.
+We're not corporate trainers with generic frameworks. We're operators who've built these systems from scratch at fast-growing companies.
 
-I speak fluent startup—I get that you need things done quickly, cheaply, and right the first time. No fluff, no endless discovery phases, just practical solutions that work for real teams under real constraints.
+We speak fluent startup—we get that you need things done quickly, cheaply, and right the first time. No fluff, no endless discovery phases, just practical solutions that work for real teams under real constraints.
 
-My clients are founders and ops leads who value clarity over complexity. If you want someone who can think strategically but ship tactically, we'll work well together.
+Our clients are founders and ops leads who value clarity over complexity. If you want a partner who can think strategically but ship tactically, we'll work well together.
 
 ---
 
@@ -87,4 +87,4 @@ Ready to make onboarding, training, and growth easier for your team?
 
 **CTA Button:** Book a Free Discovery Call
 
-*No pressure, just a quick chat to see if I can help.*
+*No pressure, just a quick chat to see if we can help.*
