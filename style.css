@@ -281,7 +281,7 @@ p {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 40px;
     position: relative;
 }
@@ -309,6 +309,30 @@ p {
     transform: translateY(-50%) scaleX(1);
 }
 
+.service-card:nth-child(4) {
+    grid-column: 1 / 2;
+}
+
+.service-card:nth-child(5) {
+    grid-column: 3 / 4;
+}
+
+@media (max-width: 1120px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+
+    .service-card:nth-child(4),
+    .service-card:nth-child(5) {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
 .service-card {
     padding: 40px 32px;
     border: 1px solid #e6e6e6;
