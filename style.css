@@ -6,11 +6,12 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    line-height: 1.6;
-    color: #1a1a1a;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.7;
+    color: #111827;
     background-color: #ffffff;
     overflow-x: hidden;
+    font-weight: 400;
 }
 
 html {
@@ -20,59 +21,67 @@ html {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 32px;
 }
 
 /* Typography */
 h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: clamp(2.75rem, 5.5vw, 4.5rem);
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 24px;
-    color: #0f0f0f;
+    margin-bottom: 32px;
+    color: #111827;
+    letter-spacing: -0.02em;
 }
 
 h2 {
-    font-size: clamp(1.875rem, 4vw, 2.5rem);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: clamp(2rem, 4.5vw, 3rem);
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 32px;
-    color: #0f0f0f;
+    margin-bottom: 48px;
+    color: #111827;
+    letter-spacing: -0.01em;
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.375rem;
     font-weight: 600;
     line-height: 1.3;
-    margin-bottom: 12px;
-    color: #1a1a1a;
+    margin-bottom: 16px;
+    color: #111827;
+    letter-spacing: -0.005em;
 }
 
 p {
     font-size: 1.125rem;
-    line-height: 1.6;
-    margin-bottom: 16px;
-    color: #4a4a4a;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #374151;
 }
 
 /* Buttons */
 .cta-button {
     display: inline-block;
-    background: #0f0f0f;
+    background: #111827;
     color: white;
     text-decoration: none;
-    padding: 16px 32px;
+    padding: 18px 36px;
     border-radius: 8px;
     font-weight: 500;
     font-size: 1rem;
-    transition: all 0.2s ease;
-    border: 2px solid #0f0f0f;
+    transition: all 0.3s ease;
+    border: 2px solid #111827;
+    letter-spacing: 0.025em;
 }
 
 .cta-button:hover {
     background: transparent;
-    color: #0f0f0f;
-    transform: translateY(-1px);
+    color: #111827;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(17, 24, 39, 0.15);
 }
 
 /* Header */
@@ -99,13 +108,14 @@ p {
 .logo a {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0f0f0f;
+    color: #111827;
     text-decoration: none;
     transition: color 0.2s ease;
+    letter-spacing: -0.01em;
 }
 
 .logo a:hover {
-    color: #4a4a4a;
+    color: #374151;
 }
 
 .nav {
@@ -115,16 +125,17 @@ p {
 }
 
 .nav-link {
-    color: #4a4a4a;
+    color: #374151;
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
     transition: color 0.2s ease;
     position: relative;
+    letter-spacing: 0.025em;
 }
 
 .nav-link:hover {
-    color: #0f0f0f;
+    color: #111827;
 }
 
 .nav-link::after {
@@ -182,11 +193,11 @@ p {
 
 /* Hero Section */
 .hero {
-    padding: 100px 0 120px; /* Increased bottom padding for scroll indicator */
+    padding: 120px 0 140px; /* Increased bottom padding for scroll indicator */
     text-align: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
     width: 100vw;
     position: relative;
     left: 50%;
@@ -225,17 +236,19 @@ p {
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: #6b6b6b;
+    color: #6b7280;
     max-width: 700px;
-    margin: 0 auto 40px;
-    line-height: 1.5;
+    margin: 0 auto 48px;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .trust-signal {
-    font-size: 0.9rem;
-    color: #4a4a4a;
+    font-size: 0.95rem;
+    color: #6b7280;
     font-style: italic;
     margin: 0;
+    font-weight: 500;
 }
 
 /* Scroll Indicator */
@@ -253,7 +266,7 @@ p {
 
 /* Services Section */
 .services {
-    padding: 100px 0;
+    padding: 120px 0;
     background: #ffffff;
     position: relative;
     opacity: 0;
@@ -347,14 +360,14 @@ p {
     }
 }
 .service-card {
-    padding: 40px 32px;
-    border: 1px solid #e6e6e6;
+    padding: 48px 40px;
+    border: 1px solid #e5e7eb;
     border-radius: 16px;
     background: #ffffff;
     transition: all 0.3s ease;
     position: relative;
     z-index: 2;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 24px rgba(17, 24, 39, 0.08);
     opacity: 0;
     transform: translateY(50px) scale(0.95);
     transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -387,22 +400,22 @@ p {
 
 .service-card:hover {
     transform: translateY(-8px) scale(1);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-    border-color: #0f0f0f;
+    box-shadow: 0 20px 48px rgba(17, 24, 39, 0.12);
+    border-color: #111827;
     transition: all 0.3s ease;
 }
 
 .service-card h3 {
-    margin-bottom: 16px;
-    color: #0f0f0f;
+    margin-bottom: 20px;
+    color: #111827;
     font-size: 1.375rem;
 }
 
 .service-card > p {
     margin-bottom: 32px;
-    color: #4a4a4a;
+    color: #374151;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .service-card ul {
@@ -413,12 +426,12 @@ p {
 
 .service-card li {
     padding: 12px 0;
-    color: #4a4a4a;
+    color: #374151;
     position: relative;
     padding-left: 24px;
     font-size: 0.95rem;
-    line-height: 1.4;
-    border-bottom: 1px solid #f5f5f5;
+    line-height: 1.5;
+    border-bottom: 1px solid #f3f4f6;
 }
 
 .service-card li:last-child {
@@ -430,7 +443,7 @@ p {
     position: absolute;
     left: 0;
     top: 12px;
-    color: #0f0f0f;
+    color: #111827;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -443,18 +456,18 @@ p {
 }
 
 .service-outcome {
-    color: #4a4a4a;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-top: 24px;
-    padding-top: 16px;
-    border-top: 1px solid #f5f5f5;
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
 }
 
 /* Products Section */
 .products {
-    padding: 100px 0;
-    background: #f9f9f9;
+    padding: 120px 0;
+    background: #f8fafc;
 }
 
 .products-grid {
@@ -471,13 +484,13 @@ p {
 }
 
 .product-card {
-    padding: 40px 32px;
-    border: 1px solid #e6e6e6;
+    padding: 48px 40px;
+    border: 1px solid #e5e7eb;
     border-radius: 16px;
     background: #ffffff;
     transition: all 0.3s ease;
     position: relative;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 24px rgba(17, 24, 39, 0.08);
     opacity: 0;
     transform: translateY(50px) scale(0.95);
     transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -506,34 +519,34 @@ p {
 
 .product-card:hover {
     transform: translateY(-8px) scale(1);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-    border-color: #0f0f0f;
+    box-shadow: 0 20px 48px rgba(17, 24, 39, 0.12);
+    border-color: #111827;
     transition: all 0.3s ease;
 }
 
 .product-card h3 {
-    margin-bottom: 16px;
-    color: #0f0f0f;
+    margin-bottom: 20px;
+    color: #111827;
     font-size: 1.375rem;
 }
 
 .product-subtitle {
-    margin-bottom: 24px;
-    color: #4a4a4a;
-    font-size: 1rem;
-    line-height: 1.5;
+    margin-bottom: 28px;
+    color: #374151;
+    font-size: 1.125rem;
+    line-height: 1.6;
     font-weight: 500;
 }
 
 .product-solve {
-    color: #6b6b6b;
+    color: #6b7280;
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 16px;
 }
 
 .product-included {
-    color: #6b6b6b;
+    color: #6b7280;
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 16px;
@@ -565,22 +578,22 @@ p {
 }
 
 .product-outcome {
-    color: #4a4a4a;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-top: 24px;
-    padding-top: 16px;
-    border-top: 1px solid #f5f5f5;
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
     font-weight: 500;
 }
 
 /* Pain Points Section */
 .pain-points {
     position: relative;
-    padding: 100px 0;
+    padding: 120px 0;
     background: #ffffff;
     overflow: hidden;
-    color: #1a1a1a;
+    color: #111827;
 }
 
 .pain-points .container {
@@ -723,8 +736,8 @@ p {
 
 /* Engagement Section */
 .engagement {
-    padding: 100px 0;
-    background: #ffffff;
+    padding: 120px 0;
+    background: #f8fafc;
 }
 
 .engagement h2 {
@@ -776,8 +789,8 @@ p {
 
 /* About Section */
 .about {
-    padding: 100px 0;
-    background: #f8f8f8;
+    padding: 120px 0;
+    background: #f8fafc;
 }
 
 .about h2 {
@@ -1027,8 +1040,8 @@ p {
 
 /* Case Study Section */
 .case-study {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    padding: 120px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
 }
 
 .case-study h2 {
