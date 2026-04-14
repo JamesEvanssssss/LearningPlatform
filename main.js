@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize services section scroll animation
     initServicesAnimation();
     
+    // Initialize products section scroll animation
+    initProductsAnimation();
+    
     // Initialize diagnostic functionality
     initDiagnostic();
     
@@ -208,6 +211,32 @@ function initServicesAnimation() {
     
     if (servicesSection) {
         observer.observe(servicesSection);
+    }
+}
+
+function initProductsAnimation() {
+    const productsSection = document.querySelector('.products');
+    const productTitle = document.querySelector('.products h2');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Animate title first
+                setTimeout(() => {
+                    if (productTitle) productTitle.classList.add('animated');
+                }, 200);
+                
+                // Add section-level animation class
+                productsSection.classList.add('animated');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    });
+    
+    if (productsSection) {
+        observer.observe(productsSection);
     }
 }
 
