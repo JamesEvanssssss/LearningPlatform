@@ -982,12 +982,26 @@ p {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
-.story-card p {
+.story-card p,
+.story-card li {
     font-size: 1.125rem;
     line-height: 1.6;
     margin-bottom: 24px;
     color: #2c3e50;
-    font-style: italic;
+    font-style: normal;
+}
+
+.story-card li {
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.story-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0f0f0f;
 }
 
 .story-attribution {
