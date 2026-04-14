@@ -19,7 +19,7 @@
                 <nav class="nav">
                     <a href="#services" class="nav-link">What We Do</a>
                     <a href="#diagnostic" class="nav-link">Quick Check</a>
-                    <a href="#contact" class="nav-link">Let's Talk</a>
+                    <a href="#contact" class="nav-link contact-trigger">Let's Talk</a>
                 </nav>
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
                     <span></span>
@@ -349,7 +349,7 @@
         <div class="container">
             <h2>Let's Make This Simple</h2>
             <p>Ready to make onboarding, training, and growth easier for your team?</p>
-            <a href="mailto:hello@example.com" class="cta-button">Book a Free Discovery Call</a>
+            <a href="#contact" class="cta-button contact-trigger">Book a Free Discovery Call</a>
             <p class="reassurance">No pressure, just a quick chat to see if we can help.</p>
         </div>
     </section>
@@ -413,8 +413,39 @@
 
     <script type="module" src="/main.js"></script>
     
+    <!-- Contact Modal -->
+    <div class="contact-modal" id="contact-modal" aria-hidden="true">
+        <div class="contact-modal-backdrop" id="contact-modal-backdrop"></div>
+        <div class="contact-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+            <button class="contact-modal-close" id="contact-modal-close" aria-label="Close contact form">&times;</button>
+            <div class="contact-modal-content">
+                <h2 id="contact-modal-title">Let's Talk</h2>
+                <p>Share your details and a brief message, and we'll follow up by email.</p>
+                <form id="contact-form">
+                    <div class="form-row">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-company">Company</label>
+                        <input type="text" id="contact-company" name="company">
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-message">Brief message</label>
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Sticky CTA Button -->
-    <a href="#contact" class="sticky-cta">
+    <a href="#contact" class="sticky-cta contact-trigger">
         <span class="sticky-cta-icon">💬</span>
         Let's Talk
     </a>

@@ -45,6 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize diagnostic functionality
     initDiagnostic();
     
+    // Initialize contact modal
+    initContactModal();
+    
     // Initialize rotating startup truths
     initStartupTruths();
 });
@@ -251,8 +254,75 @@ function initDiagnostic() {
     }
 }
 
+function initContactModal() {
+    const modal = document.getElementById('contact-modal');
+    const openers = document.querySelectorAll('.contact-trigger');
+    const closeButton = document.getElementById('contact-modal-close');
+    const backdrop = document.getElementById('contact-modal-backdrop');
+    const form = document.getElementById('contact-form');
+
+    if (!modal || !form) {
+        return;
+    }
+
+    function openModal() {
+        modal.classList.add('show');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    openers.forEach(opener => {
+        opener.addEventListener('click', function(event) {
+            event.preventDefault();
+            openModal();
+        });
+    });
+
+    if (closeButton) {
+        closeButton.addEventListener('click', closeModal);
+    }
+
+    if (backdrop) {
+        backdrop.addEventListener('click', closeModal);
+    }
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && modal.classList.contains('show')) {
+            closeModal();
+        }
+    });
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const name = form.querySelector('[name="name"]').value.trim();
+        const company = form.querySelector('[name="company"]').value.trim();
+        const email = form.querySelector('[name="email"]').value.trim();
+        const message = form.querySelector('[name="message"]').value.trim();
+
+        if (!name || !email || !message) {
+            form.reportValidity();
+            return;
+        }
+
+        const recipient = 'hello@example.com';
+        const subject = `Website inquiry from ${name}`;
+        const body = `Name: ${name}\nCompany: ${company}\nEmail: ${email}\n\n${message}`;
+        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        window.location.href = mailtoLink;
+        closeModal();
+    });
+}
+
 // Smooth scroll for CTA buttons
-const ctaButtons = document.querySelectorAll('a[href^="#"]');
+const ctaButtons = document.querySelectorAll('a[href^="#"]:not(.contact-trigger)');
 
 ctaButtons.forEach(button => {
     button.addEventListener('click', function(e) {
