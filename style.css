@@ -991,10 +991,17 @@ p {
     font-style: normal;
 }
 
+.story-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
 .story-card li {
     margin-bottom: 12px;
     padding-left: 24px;
     position: relative;
+    list-style: none;
 }
 
 .story-card li::before {
